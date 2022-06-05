@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>Wiki</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Tech Blog by Oleg Kucherenko</a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link" href="../index.html#articles">Articles</a>
+                    <a class="nav-link" href="../index.html#how-to">How-To</a>
+                </div>
+            </div> -->
+        </div>
+    </nav>
+
+    <div class="container" style="width: 60%;">
+        <br><br>
+
+        <h2>How to Create a Knowledge Base with GitHub</h2>
+        <p><i>This article shows how to use GitHub Wikis service to create your technical knowledge base.</i></p>
+        <br>
+
+        <p>
+            If your company has decided to create its own knowledge base then wiki is a good approach to do it. There
+            are many options on how to create your wiki knowledge base.
+        </p>
+
+        <ul>
+            <li>
+                Use wiki engines and host them on the server. It requires programming knowledge to setup and configure
+                the environment as well as buy hosting and implement access policy.
+            </li>
+            <li> Create your own web app. This one requires the same as previous plus development efforts.</li>
+            <li>Utilize ready-to-use services like GitHub Wikis.</li>
+        </ul>
+
+        <p>
+            According to <a
+                href="https://docs.github.com/en/communities/documenting-your-project-with-wikis/about-wikis"
+                target="_blank">GitHub</a> <i>“Wikis are available in public repositories with GitHub Free and GitHub
+                Free for organizations, and in public and private repositories with GitHub Pro, GitHub Team, GitHub
+                Enterprise Cloud and GitHub Enterprise Server…”</i>
+            <br><br>
+            So if your company is technology oriented and maybe you need to collect and share code snippets or
+            templates, create some onboarding content for newbies, GitHub Wiki can be a good choice to consider.
+        </p>
+        <br>
+
+        <h4>Create a Public Repository</h4>
+        <p>
+            Firstly signup or login to your GitHub account. Then to create a new public repository click “+” button in
+            the top right corner.
+        </p>
+        <br>
+        <img src="../img/wiki/New repository.png" class="img-fluid" alt="..."
+            style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>
+            You will see the “Create a new repository” page. Type your repository name, select “Public” option, other
+            options can be left in default position. Then click on the “Create repository” button.
+        </p>
+        <br>
+        <img src="../img/wiki/New repository 2.png" class="img-fluid" alt="..."
+            style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+
+        <h4>Create First Wiki Page</h4>
+        <p>After your repository is created, you will see the “Wiki” tab on the main control panel. Click on that tab.
+        </p>
+        <br>
+        <img src="../img/wiki/Create first page.png" class="img-fluid" alt="..."
+            style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>
+            On the “Create new page” page type the name of the page - “Main” (or whatever you want) and some welcome
+            text (or leave default one). Then click on “Save page” in the bottom right corner.
+
+        </p>
+        <br>
+        <img src="../img/wiki/First page.png" class="img-fluid" alt="..." style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>
+            Now your wiki has one page. Note “Edit” and “New Page” buttons, main area and sidebar.
+        </p>
+        <br>
+        <img src="../img/wiki/Main page.png" class="img-fluid" alt="..." style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+
+        <h4>Create a Few More Wiki Pages</h4>
+        <p>
+            Now let's create a few simple code snippets - one for Python (just printing Hello World) and one for Linux
+            (list files and directories command). So developers can use or share code snippets or templates like these.
+            <br><br>
+            Click on the “New Page” button and create a page for Python as shown below. Type name of the page -
+            “Python”. On the tab “Write” past some markdown code. In our case it is just the Hello World program.
+        </p>
+        <br>
+        <img src="../img/wiki/Python write.png" class="img-fluid" alt="..."
+            style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>
+            Select the “Preview” tab to review the final output.
+        </p>
+        <br>
+        <img src="../img/wiki/Python preview.png" class="img-fluid" alt="..."
+            style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>
+            Click on the “Save Page” button on the bottom right corner.
+            <br>
+            Similarly, let’s create one more page for Linux code snippet (command that lists files and directories).
+        </p>
+        <br>
+        <img src="../img/wiki/Linux.png" class="img-fluid" alt="..." style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>
+            Remember to click on the “Save Page” button on the bottom right corner.
+        </p>
+        <br>
+
+
+        <h4>Add Custom Sidebar</h4>
+        <p>Now you see on the sidebar all pages you have created.</p>
+        <br>
+        <img src="../img/wiki/Pages sidebar.png" class="img-fluid" alt="..."
+            style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>
+            To optimize navigation through sidebar links we can add a custom sidebar. To do this we firstly need URLs of
+            our pages. Please open Linux, Python and Main pages and copy their URLs, or keep these pages as opened tabs
+            in your browser to further copy and paste their URLs.
+            <br><br>
+            Click the “Add a custom sidebar” button that is below the sidebar right panel. Final code of the new sidebar
+            page is shown below.
+        </p>
+        <br>
+        <img src="../img/wiki/Sidebar create.png" class="img-fluid" alt="..."
+            style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>To insert links, use the “Link” button from the control panel.</p>
+        <br>
+        <img src="../img/wiki/Link button.png" class="img-fluid" alt="..."
+            style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>Insert links for Main, Python and Linux pages using previously saved URLs.</p>
+        <br>
+        <img src="../img/wiki/Insert link.png" class="img-fluid" alt="..."
+            style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>Then click on the “Save Page” button.</p>
+        <br>
+        <img src="../img/wiki/Outline ready.png" class="img-fluid" alt="..."
+            style="border: 1px solid grey; border-radius: 6px">
+        <br><br><br>
+
+        <p>
+            Now you have created a public repository with Wiki, a few pages, and sidebar outline to quickly navigate
+            through the knowledge base.
+        </p>
+        <br>
+
+
+        <h4>Share Links</h4>
+        <p>
+            To share a link to the Wiki knowledge base just navigate to the Main page from the sidebar outline and copy
+            the URL in your browser address panel.
+            <br><br>
+            If you want to share links of certain pages, similarly, copy URLs of these pages in your browser address
+            panel.
+        </p>
+        <br><br>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

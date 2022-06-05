@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <title>SRS</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-light sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="../index.html">Tech Blog by Oleg Kucherenko</a>
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    <a class="nav-link" href="../index.html#articles">Articles</a>
+                    <a class="nav-link" href="../index.html#how-to">How-To</a>
+                </div>
+            </div> -->
+        </div>
+    </nav>
+
+    <div class="container" style="width: 60%">
+        <br><br>
+
+        <h2>What is Software Requirements Specification</h2>
+        <p>
+            <i>
+                This article provides an intuition to build an understanding of what is a software requirements
+                specification, and what are the benefits of having these documentation.
+            </i>
+        </p>
+        <br>
+
+        <h4>Overview and Benefits</h4>
+        <p>
+            The Software Requirements Specifications (SRS) is a specification for a particular software product,
+            program, or set of programs that performs certain functions in a specific environment.
+
+            Recommended Practice for Software Requirements Specifications (IEEE Std 830-1998) highlights benefits that
+            good SRS should provide for their customers, such as the following:
+        </p>
+
+        <ul>
+            <li>
+                Establish the basis for agreement between parties involved in product creation on what the software
+                product is to do
+            </li>
+            <li>Reduce the development effort </li>
+            <li> Provide a basis for estimating costs and schedules </li>
+            <li> Provide a baseline for validation and verification</li>
+            <li> Facilitate transfer to new customers or include new parts of the organization </li>
+            <li> Serve as a basis for enhancement </li>
+        </ul>
+
+        <p>
+            SRS should not describe any design or implementation details. These should be described in the design stage
+            of the project. A requirement specifies an externally visible function or attribute of a system, while a
+            design describes a particular subcomponent of a system or its interfaces with other subcomponents.
+        </p>
+        <br>
+
+        <h4>Outline of SRS</h4>
+
+        <p>
+            SRS outline, as suggested by Recommended Practice, looks like the following.
+        </p>
+
+        <ol>
+            <li>Introduction
+                <ul>
+                    <li>Purpose</li>
+                    <li>Scope</li>
+                    <li>Definitions, acronyms and abbreviations</li>
+                    <li>References</li>
+                    <li>Overview</li>
+                </ul>
+            </li>
+            <br>
+            <li>Overall description
+                <ul>
+                    <li>Product perspective</li>
+                    <li>Product functions</li>
+                    <li>User characteristics</li>
+                    <li>Constraints</li>
+                    <li>Assumptions and dependencies</li>
+                </ul>
+            </li>
+            <br>
+            <li>Specific requirements
+                <ul>
+                    <li>External interface requirements</li>
+                    <li>User interfaces</li>
+                    <li>Hardware interfaces</li>
+                    <li>Software interfaces</li>
+                    <li>Communications interfaces</li>
+                    <br>
+                    <li>Functional requirements</li>
+                    <li>Performance requirements</li>
+                    <li>Design constraints</li>
+                    <li>Software system attributes</li>
+                    <li>Other requirements</li>
+                </ul>
+            </li>
+            <br>
+            Appendexies
+            <br>
+            Index
+        </ol>
+
+        <p> There are some examples of organizing functional requirements: by mode, by user class, by classes or
+            objects, by
+            system feature, etc.
+        </p>
+
+        <ul>
+            <li>Functional requirements
+                <ul>
+                    <li>Mode 1 / User class 1 / Class or object 1 / Feature 1 / etc.
+                        <ul>
+                            <li>Functional requirement 1.1</li>
+                            <li>Functional requirement 1.2</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+
+                    <li>...</li>
+
+                    <li>Mode N / User class N / Class or object N / Feature N / etc.
+                        <ul>
+                            <li>Functional requirement N.1</li>
+                            <li>Functional requirement N.2</li>
+                            <li>...</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+        </ul>
+        <br>
+
+        <h4>Introduction Section of SRS</h4>
+
+        <ul>
+            <li>Introduction
+                <ul>
+                    <li>Purpose</li>
+                    <li>Scope</li>
+                    <li>Definitions, acronyms and abbreviations</li>
+                    <li>References</li>
+                    <li>Overview</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>
+            The “Purpose” defines the purpose and the intended audience for the SRS. “Scope” subsection identifies the
+            software product to be produced by name, explains what the software product will and will not do, describes
+            the application, including relevant benefits, objectives, and goals.
+            <br><br>
+            “Definitions, acronyms and abbreviations” contains the definitions of all terms required to properly
+            interpret the SRS. This information may be provided by reference to the appendixes in the SRS or by
+            reference to other documents.
+            <br><br>
+            “References” subsection provides a complete list of all documents referenced elsewhere in the SRS. This
+            information also may be provided by reference to an appendix or to another document.
+            “Overview” describes what the rest of SRS contains and explains how the SRS is organized.
+        </p>
+        <br>
+
+        <h4>Overall Description Section</h4>
+
+        <ul>
+            <li>Overall description
+                <ul>
+                    <li>Product perspective</li>
+                    <li>Product functions</li>
+                    <li>User characteristics</li>
+                    <li>Constraints</li>
+                    <li>Assumptions and dependencies</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>
+            “Product perspective” puts the product into perspective with other related products. If the product is
+            independent and totally self-contained, it should be so stated here.
+            If the product is a component of a larger system, then this subsection should relate the requirements of
+            that larger system to functionality of the software, and should identify interfaces between that system and
+            the software.
+            <br><br>
+            “Product perspective” subsection also describes how the software operates inside various constraints. For
+            example, these constraints may include system interfaces, user interfaces, hardware interfaces, software
+            interfaces, communications interfaces, memory, operations, site adaptation requirements. More detailed
+            description of the interfaces should be placed in the “Specific requirements” section where interfaces are
+            being described.
+            <br><br>
+            “Product functions” provides a summary of the major functions of the software without mentioning the vast
+            amount of detail that each of those functions requires. The functions should be organized in a way that
+            makes the list of functions understandable to the customer or to anyone else reading the document for the
+            first time. More detailed description of the functions should be placed in the “Functional requirements”
+            subsection of the “Specific requirements” section.
+            <br><br>
+            “User characteristics” subsection describes general characteristics of the intended users of the product
+            including, for example, age, gender, country of origin, educational level, experience, and technical
+            expertise, etc.
+            <br><br>
+            “Constraints” includes a general description of any other items that will limit the developers’ options.
+            These may include regulatory policies, hardware limitations, interfaces to other applications, parallel
+            operations, audit and control functions, higher-order language requirements, signal handshake protocols,
+            reliability requirements, criticality of the application, safety and security considerations.
+            <br><br>
+            “Assumptions and dependencies” describes the factors that affect the requirements stated in the SRS. These
+            factors are not design constraints on the software but changes to them can affect
+            the requirements in the SRS.
+        </p>
+        <br>
+
+        <h4>Specific Requirements Section</h4>
+
+        <ul>
+            <li>Specific requirements
+                <ul>
+                    <li>External interface requirements</li>
+                    <li>User interfaces</li>
+                    <li>Hardware interfaces</li>
+                    <li>Software interfaces</li>
+                    <li>Communications interfaces</li>
+                    <br>
+                    <li>Functional requirements</li>
+                    <li>Performance requirements</li>
+                    <li>Design constraints</li>
+                    <li>Software system attributes</li>
+                    <li>Other requirements</li>
+                </ul>
+            </li>
+        </ul>
+
+        <p>
+            This section of the SRS should contain all of the software requirements to a level of detail sufficient to
+            enable designers to design a system to satisfy those requirements, and testers to test that the system
+            satisfies those requirements.
+            <br><br>
+            Interface descriptions (as compliment to “Product perspective” of Overall section) contain detailed
+            descriptions of all inputs into and outputs from the software system.
+            <br><br>
+            “Functional requirements” defines the actions that must take place in the software to accept and process the
+            inputs and to process and generate the outputs. These are generally listed
+            as “shall” statements starting with “The system shall…”. These include validity checks on the inputs, exact
+            sequence of operations, response to abnormal situations, effect of parameters.
+            <br><br>
+            “Performance requirements” specify both the static and the dynamic numerical requirements placed on the
+            software or on human interaction with the software as a whole.
+            <br>
+            Static numerical requirements (also called “Capacity”) may include the number of terminals to be supported,
+            the number of simultaneous users to be supported, amount and type of information to be handled.
+            <br>
+            Dynamic numerical requirements may include, for example, the numbers of transactions and tasks and the
+            amount of data to be processed within certain time periods for both normal and peak workload conditions.
+            <br>
+            All of these requirements should be stated in measurable terms.
+            <br><br>
+            “Design constraints” specifies constraints that can be imposed by other standards, hardware limitations,
+            etc.
+            <br><br>
+            Listing of “Software system attributes” may include reliability, availability, security, maintainability,
+            portability, etc.
+        </p>
+        <br>
+
+        <h4>Conclusion</h4>
+        <p>
+            Recommended Practice for SRS provides key points, guides and insights to build intuition about SRS. As each
+            software company has its own work specificity and culture it is a good start point to create your own
+            corporate documentation framework that will fit your needs and projects. Potential benefits relate to
+            implementing high standards, move from intuition to more professional ways of communication, and make
+            projects more predictable and manageable.
+        </p>
+        <br>
+
+        <h4>References</h4>
+
+        <ol>
+            <li>Recommended Practice for Software Requirements Specifications, IEEE Std 830-1998</li>
+            <li>Standard Glossary of Software Engineering Terminology, IEEE Std 610.12-1990</li>
+        </ol>
+
+        <br><br>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
